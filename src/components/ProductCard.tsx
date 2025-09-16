@@ -6,7 +6,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="border p-8 rounded-lg shadow flex flex-col justify-between">
+    <div className="border border-gray-300 p-8 rounded-lg shadow flex flex-col justify-between">
       <img
         src={product.image}
         alt={product.title}
@@ -16,7 +16,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <h2 className="text-lg font-semibold">{product.title}</h2>
         <p className="text-gray-700">${product.price}</p>
         <button
-          className="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="mt-2 bg-emerald-300 text-white px-4 py-2 rounded hover:bg-blue-700"
           onClick={() =>
             dispatch(
               addToCart({

@@ -6,10 +6,10 @@ export default function Navbar() {
 
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center">
-      <Link to="/" className="font-bold text-xl">E-Shop</Link>
+      <Link to="/" className="font-bold text-xl">ონლაინ მაღაზია</Link>
       <div className="flex gap-6">
-        <Link to="/">Home</Link>
-        <Link to="/cart">Cart ({cartItems.length})</Link>
+        <Link to="/">საწყისი</Link>
+        <Link to="/cart">კალათა ({cartItems.length})</Link>
       </div>
     </nav>
   );
