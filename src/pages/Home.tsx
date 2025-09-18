@@ -15,7 +15,7 @@ export default function Home() {
   if (loading) return <p className="text-center">Loading products...</p>;
 
   return (
-    <div className="bg-emerald-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+    <div className="bg-violet-200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
       {items.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}
